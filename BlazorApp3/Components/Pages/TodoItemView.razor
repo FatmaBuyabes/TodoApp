@@ -1,0 +1,11 @@
+﻿@using BlazorApp3.Models
+@page "/todo/{id:int}"
+
+<div class="card">
+    @todo.Description (@(todo.IsCompleted ? "true" : "false"))
+</div>
+
+@code {
+    [Parameter] public TodoItem todo { get; set; }
+
+}

@@ -1,0 +1,22 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<TodoItemView todo="item1"></TodoItemView>
+
+@code {
+    public TodoItem item1 = new TodoItem
+        {
+            Description = "TASK 1",
+            DueDate = DateTime.Now,
+            Id = 1,
+            IsCompleted = false
+
+
+
+        };
+}
